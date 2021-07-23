@@ -1,0 +1,35 @@
+/*  Todo navegador traz um css "pré-ponto", margins, border, etc    */
+/*  Resetar navegador para aplicar as configurações do 0   */
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/*  VARIÁVEIS QUE ARMAZENAM CORES   */
+html{
+    --black: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #F6FAFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+
+    --grey-dark: #4D5E77;
+    --grey-blue: #A1B2CD;
+    --grey-light: #E5EAF1;
+
+    /* 1rem = 16px (User Agent) = 100% (User Agent)  */
+    /*  Mudei o padrão do navegador para 10px,
+    Assim consigo dividir os px por 10 para rem
+    Exemplo a fonte precisa ser 28px, entao vai ser
+    2.8 rem */
+
+    font-size: 62.5%; /* padrão navegador para 10px agora */
+    
+}
