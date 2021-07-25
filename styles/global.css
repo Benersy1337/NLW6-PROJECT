@@ -33,3 +33,110 @@ html{
     font-size: 62.5%; /* padrão navegador para 10px agora */
     
 }
+
+body{
+    /* Indica que é pra pegar todo o começo e fim da tela na vertical  */
+    /*   nesse caso o body vai ser do tamanho do navegador  */
+    height: 100vh; 
+    /* Indica que é pra pegar todo o começo e fim da tela na horizontal  */
+    /* width: 100vw; */
+    /* funcão para puxar as varáveis de cores  */
+    background: var(--background);
+    display: flex;
+}
+ 
+/*  O Body não engloba (button,input,textarea)   */
+body,button,input,textarea{
+    /* clamp(menor tamanho possível,tamanho padrao,maior tamanho possível)    */
+    /* Se for colocar em um tv grande por exemplo, o máximo vai ser 2vw  */
+    font-size: clamp(14px,1.6rem,2vw);
+
+    /* Fonte padrão   */
+    font-family: 'Open Sans', sans-serif;
+    
+
+}
+
+.content{
+    /* Largura total */
+    width: 100%;
+    /* Largura em cima e em baixo 0, nas laterias automático */
+    margin: 0 auto;
+}
+
+/* Elemento está acima da tela para não atrapalhar o layout mas também não sumir
+Completamente */
+.sr-only{
+    /* fica por cima dos demais elementos da tela, como se n fizesse parte de uma div   */
+    position: absolute;
+    /* Altura   */
+    height: 1px;
+    /*  Largura  */
+    width: 1px;
+    /* Espaçamento ao redor de um elemento */
+    padding: 0;
+    /* Espaço ao redor de um elemento */
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+/* input and buttons */
+input, button, .button{
+    border-radius: 0.8rem;
+    height: 5rem;
+
+}
+
+button, .button{
+    font-family: 'Poppins';
+    font-weight: 500;
+    /* Espaçamento entre as linhas do texto */
+    line-height: 0;
+
+    display: flex;
+    /* alinha na vertical */
+    align-items: center;
+    /* alinha na horizontal */
+    justify-content: center;
+
+    background: var(--blue);
+    color: var(--white);
+
+    /* tempo da transição de cor do hover */
+    transition: filter 0.2s;
+
+    /* Cursor com a maozinha */
+    cursor: pointer;
+}
+
+/* transposição de cor */
+button:hover, .button:hover{
+    filter: brightness(1.2);
+}
+
+button > img
+.button > img{
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined,
+.button.outlined{
+    background: var(--white);
+    color: var(--blue);
+    border: 0.2rem solid var(--blue);
+}
+
+.content header{
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img{
+    width: 16.7rem;
+
+}
