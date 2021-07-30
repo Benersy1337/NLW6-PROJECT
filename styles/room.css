@@ -1,0 +1,39 @@
+/* Pegar header somente da room */
+#room header{
+    width: 100%;
+
+    /* Os itens um do lado do outro */
+    display: flex;
+    /* Itens centralizados na vertical */
+    align-items: center;
+    /* Itens centralizados na horizontal */
+    justify-content: center;
+}
+
+#room header .buttons{
+    display: flex;
+}
+
+#room header .buttons .button:nth-child(1){
+    margin-right: 0.8rem;
+    /* Distancia das margens ao redor */
+    padding: 1.3rem 1.6rem;
+}
+
+#room header .buttons .button:nth-child(1) img{
+    /* distancia da img para o codigo da sala */
+    margin-left: 1rem;
+    /* a imagem tem 20x20 pixels */
+    width: 2rem;
+    height: 2rem;
+}
+
+#room header .buttons .button:nth-child(2){
+    
+}
+
+
+#room header .buttons .button:nth-child(2) img{
+    width: 2rem;
+    height: 2rem;
+}
