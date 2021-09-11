@@ -157,7 +157,10 @@
     margin-left: 1.6rem;
     /* quebrar a palavra, para nao sair do layout */
     word-break: break-word;
-    
+    display: flex;
+    align-items: center;
+    min-height: 5.5rem;
+
 }
 
 
