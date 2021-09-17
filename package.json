@@ -1,0 +1,23 @@
+{
+  "name": "NLW6-PROJECT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benersy1337/NLW6-PROJECT.git"
+  },
+  "keywords": [],
+  "author": "Luan Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Benersy1337/NLW6-PROJECT/issues"
+  },
+  "homepage": "https://github.com/Benersy1337/NLW6-PROJECT#readme",
+  "dependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
