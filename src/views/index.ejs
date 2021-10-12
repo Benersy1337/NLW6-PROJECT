@@ -37,39 +37,10 @@
 
         <main>
             <div class="container">
-                <section>
-                    <h2>Entre como Participante</h2>
-                    <!--Action para enviar para algum lugar-->
-                    <form action="">
-                        <!--Ao clicar em "codigo da sala", o input é selecionado, porque foram conectados o label e o input pelo id="room-id".
-                            Label Ajuda nos motores de busca do google, saber o que é o input (codigo da sala), 
-                            "sr-only" esconde o label dos navegadores, porem permanecendo o label para o  --->
-                        <label class="sr-only" for="room-id">Código da Sala</label>
-                        <!--Input do tipo de entrada número-->
-                        <!--Place Holder para aparecer a escrita dentro do input, como uma forma de acessebilidade-->
-                        <input type="number" id="room-id" placeholder="Código da Sala">
-                        <!--Botao com a Escrita "entrar na sala"-->
-                        <button>
-                            Entrar na Sala
-                            <img src="photos/enter-room.svg" alt="Entrar na Sala">
-                        </button>
-                    </form>
-                </section>
-    
-                <div class="separator">
-                    <div></div>
-                    <div>ou</div>
-                    <div></div>
-                </div>
-    
-                <section>
-                    <h2>Crie sua própria sala de forma Fácil</h2>
-                    <a href="create-room.html" class="button outlined">
-                        <img src="photos/users.svg" alt="Criar Sala"> 
-                        Criar Sala
-    
-                    </a>
-                </section>
+
+                <!-- Vai renderizar a part correta de acordo com a URL -->
+                <%- include('parts/enter-room') %>
+
             </div>
         </main>
     </div>

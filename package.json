@@ -1,10 +1,9 @@
 {
   "name": "NLW6-PROJECT",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "nodemon ."
   },
   "repository": {
     "type": "git",
@@ -19,5 +18,7 @@
   "homepage": "https://github.com/Benersy1337/NLW6-PROJECT#readme",
   "dependencies": {
     "nodemon": "^2.0.12"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
